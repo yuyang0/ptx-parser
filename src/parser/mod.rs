@@ -4,7 +4,7 @@ pub(crate) mod comment;
 pub(crate) mod function;
 pub(crate) mod global;
 pub(crate) mod preamble;
-pub(crate) mod ptx_file;
+pub mod ptx_file;
 
 use preamble::Preamble;
 use function::Function;
