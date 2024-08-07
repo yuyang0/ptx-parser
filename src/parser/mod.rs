@@ -1,14 +1,14 @@
 use nom::{bytes::complete::take_while1, character::complete::char, sequence::delimited, IResult};
 
-pub(crate) mod comment;
-pub(crate) mod function;
-pub(crate) mod global;
-pub(crate) mod preamble;
+pub mod comment;
+pub mod function;
+pub mod global;
+pub mod preamble;
 pub mod ptx_file;
 
-use preamble::Preamble;
 use function::Function;
 use global::Global;
+use preamble::Preamble;
 
 #[derive(Debug)]
 pub struct PtxParser<'a> {
