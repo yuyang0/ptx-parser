@@ -17,7 +17,7 @@ pub struct FunctionSignature<'a> {
 }
 
 #[derive(Debug, PartialEq)]
-pub(super) struct ReturnValue<'a> {
+pub struct ReturnValue<'a> {
     raw_string: &'a str,
 }
 
